@@ -1,0 +1,124 @@
+/* ---------- Footer ---------- */
+
+/* Footer full box - dark green background */
+.footer {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    color: white;
+    padding-top: 60px;
+    border-top: 5px solid #ff9800;
+    /* Unga Google font name inga maathikonga */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 3 columns side by side */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 60px 40px 60px;
+}
+
+/* Each column */
+.footer-box {
+    flex: 1;
+}
+
+/* Fruitzone big heading */
+.footer-heading {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+/* Fruit - light green */
+.logo-green-light {
+    color: #a5d6a7;
+}
+
+/* Normal paragraph text */
+.footer-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #e8f5e9;
+    margin: 0;
+}
+
+/* Column titles (Quick Links, Contact Us) */
+.footer-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #ffcc80;
+    border-bottom: 2px solid #ff9800;
+    display: inline-block;
+    padding-bottom: 6px;
+}
+
+/* List without dots */
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Space between each list item */
+.footer-list li {
+    margin-bottom: 12px;
+}
+
+/* Footer links */
+.footer-link {
+    text-decoration: none;
+    color: #e8f5e9;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+/* Link hover - orange colour + konjam right ku move */
+.footer-link:hover {
+    color: #ffcc80;
+    padding-left: 8px;
+}
+
+/* Social icons row */
+.footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Each round icon */
+.social-icon {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    color: #2e7d32;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+/* Icon hover - orange colour + mela povum */
+.social-icon:hover {
+    background-color: #ff9800;
+    color: white;
+    transform: translateY(-6px);
+}
+
+/* Bottom copyright strip */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 18px;
+}
+
+/* Copyright text */
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    color: #c8e6c9;
+}

@@ -1,0 +1,118 @@
+/* ---------- Fruits Cards ---------- */
+
+/* Full section box */
+.fruits {
+    background-color: #f9fbe7;
+    padding: 80px 60px;
+    /* Unga Google font name inga maathikonga */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading area - center la */
+.fruits-head {
+    text-align: center;
+    margin: 0 auto 60px auto;
+}
+
+/* Small tag on top */
+.fruits-tag {
+    display: inline-block;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 0 0 15px 0;
+}
+
+/* Big heading */
+.fruits-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1b5e20;
+    margin: 0;
+}
+
+/* Fruits - orange colour */
+.fruits-highlight {
+    color: #ff9800;
+}
+
+/* 3 cards in one row */
+.fruits-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+}
+
+/* Each card */
+.fruit-card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+/* Card hover - mela povum */
+.fruit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Fruit image */
+.fruit-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.4s;
+}
+
+/* Image zoom on card hover */
+.fruit-card:hover .fruit-img {
+    transform: scale(1.08);
+}
+
+/* Name, rate, button area */
+.fruit-info {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+/* Fruit name */
+.fruit-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b5e20;
+    margin: 0 0 8px 0;
+}
+
+/* Rate */
+.fruit-rate {
+    font-size: 19px;
+    font-weight: 600;
+    color: #ff9800;
+    margin: 0 0 18px 0;
+}
+
+/* Buy Now button */
+.fruit-btn {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+/* Button hover */
+.fruit-btn:hover {
+    background-color: #ff9800;
+}

@@ -1,0 +1,252 @@
+/* ---------- Section 1 (4 cards) ---------- */
+
+/* Full section box */
+.sec1 {
+    background-color: white;
+    padding: 80px 60px;
+    /* Unga Google font name inga maathikonga */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading area - center la */
+.sec1-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 60px auto;
+}
+
+/* Small tag on top */
+.sec1-tag {
+    display: inline-block;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 0 0 15px 0;
+}
+
+/* Big heading */
+.sec1-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1b5e20;
+    margin: 0 0 15px 0;
+}
+
+/* Taste - orange colour */
+.sec1-highlight {
+    color: #ff9800;
+}
+
+/* Paragraph under heading */
+.sec1-sub {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* 4 cards in one row */
+.sec1-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Each card */
+.sec1-card {
+    flex: 1;
+    background-color: #f1f8e9;
+    text-align: center;
+    padding: 40px 25px;
+    border-radius: 20px;
+    border-bottom: 5px solid #4caf50;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+/* Card hover - mela povum */
+.sec1-card:hover {
+    transform: translateY(-12px);
+    border-bottom: 5px solid #ff9800;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Round icon circle */
+.sec1-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin: 0 auto 25px auto;
+    transition: all 0.3s;
+}
+
+/* Card hover - icon orange aagum */
+.sec1-card:hover .sec1-icon {
+    background-color: #ff9800;
+}
+
+/* Card title */
+.sec1-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1b5e20;
+    margin: 0 0 12px 0;
+}
+
+/* Card paragraph */
+.sec1-card-text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ---------- This Week Most Ordered (flip cards) ---------- */
+
+/* Weekly block - space from the top cards */
+.weekly {
+    margin-top: 90px;
+}
+
+/* 4 flip cards in one row */
+.weekly-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Flip card outer box - needed for 3D effect */
+.flip-card {
+    flex: 1;
+    height: 380px;
+    perspective: 1000px;
+}
+
+/* Inner box - this one rotates */
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* On hover - flip the card */
+.flip-card:hover .flip-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and back common style */
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
+}
+
+/* Front side - image + name + price */
+.flip-front {
+    background-color: white;
+}
+
+/* Fruit image */
+.flip-img {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+}
+
+/* Name and price area */
+.flip-info {
+    text-align: center;
+    padding: 12px;
+}
+
+/* Fruit name on front */
+.flip-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1b5e20;
+    margin: 0 0 5px 0;
+}
+
+/* Price on front */
+.flip-price {
+    font-size: 17px;
+    font-weight: 600;
+    color: #ff9800;
+    margin: 0;
+}
+
+/* Back side - green background */
+.flip-back {
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Fruit name on back */
+.flip-back-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffcc80;
+    margin: 0 0 5px 0;
+}
+
+/* Price on back */
+.flip-back-price {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+
+/* Benefits list - 3 lines */
+.flip-benefits {
+    list-style: none;
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+/* Each benefit line */
+.flip-benefits li {
+    font-size: 15px;
+    color: #e8f5e9;
+    line-height: 2;
+}
+
+/* Buy Now button */
+.flip-btn {
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 35px;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+/* Button hover */
+.flip-btn:hover {
+    background-color: white;
+    color: #2e7d32;
+}

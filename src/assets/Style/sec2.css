@@ -1,0 +1,217 @@
+/* ---------- Section 2 ---------- */
+
+/* Full section box */
+.sec2 {
+    background-color: #f9fbe7;
+    /* Unga Google font name inga maathikonga */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Heading area - center la */
+.sec2-head {
+    text-align: center;
+    margin: 0 auto 50px auto;
+}
+
+/* Small tag on top */
+.sec2-tag {
+    display: inline-block;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin: 0 0 15px 0;
+}
+
+/* Big heading */
+.sec2-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #1b5e20;
+    margin: 0;
+}
+
+/* Orange colour word */
+.sec2-highlight {
+    color: #ff9800;
+}
+
+
+/* ---------- Part 1 : Juice Varieties ---------- */
+
+/* Juice block */
+.juice {
+    padding: 80px 60px 40px 60px;
+}
+
+/* 8 cards - 4 in one row, next 4 in second row */
+.juice-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Each juice card */
+.juice-card {
+    width: calc(25% - 23px);
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-radius: 20px;
+    border-bottom: 5px solid #4caf50;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s;
+}
+
+/* Card hover - mela povum */
+.juice-card:hover {
+    transform: translateY(-10px);
+    border-bottom: 5px solid #ff9800;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Round fruit image */
+.juice-img {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e8f5e9;
+    margin: 0 auto 20px auto;
+    display: block;
+    transition: all 0.3s;
+}
+
+/* Card hover - image konjam zoom aagum */
+.juice-card:hover .juice-img {
+    transform: scale(1.1);
+    border-color: #ffcc80;
+}
+
+/* Juice name */
+.juice-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b5e20;
+    margin: 0 0 10px 0;
+}
+
+/* Benefit text */
+.juice-text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ---------- Part 2 : Eat Fruits ---------- */
+
+/* Eat fruits block */
+.eat {
+    padding: 60px 60px 80px 60px;
+}
+
+/* One row = image + content joined together */
+.eat-row {
+    display: flex;
+    align-items: stretch;
+    background-color: #e8f5e9;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+/* Fruit image - left side */
+.eat-img {
+    width: 40%;
+    height: 320px;
+    object-fit: cover;
+}
+
+/* Content - right side */
+.eat-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 50px;
+}
+
+/* Fruit name */
+.eat-name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin: 0 0 15px 0;
+}
+
+/* Benefits list */
+.eat-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Each benefit line */
+.eat-list li {
+    font-size: 17px;
+    color: #444;
+    line-height: 2;
+}
+
+
+/* ---------- Part 3 : Order banner ---------- */
+
+/* Full width green banner */
+.order {
+    background: linear-gradient(135deg, #1b5e20, #43a047);
+    text-align: center;
+    padding: 80px 60px;
+}
+
+/* Banner heading */
+.order-title {
+    font-size: 46px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 15px 0;
+}
+
+/* Right At Your Door - orange colour */
+.order-highlight {
+    color: #ffcc80;
+}
+
+/* Banner paragraph */
+.order-text {
+    font-size: 18px;
+    color: #e8f5e9;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 35px auto;
+}
+
+/* Order Now button */
+.order-btn {
+    display: inline-block;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 16px 50px;
+    border-radius: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+}
+
+/* Button hover */
+.order-btn:hover {
+    background-color: white;
+    color: #2e7d32;
+    transform: translateY(-5px);
+}

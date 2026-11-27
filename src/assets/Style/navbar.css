@@ -1,0 +1,87 @@
+/* ---------- Navbar ---------- */
+
+/* Navbar full box - top la stick aagi irukkum */
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 60px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #4caf50;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* Unga Google font name inga maathikonga */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo area (image + name) */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Logo image */
+.nav-logo-img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    transition: transform 0.5s;
+}
+
+/* Image mela mouse pona konjam thirumbum */
+.nav-logo-img:hover {
+    transform: rotate(360deg);
+}
+
+/* Fruitzone name */
+.nav-logo-text {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Fruit - green colour */
+.logo-green {
+    color: #2e7d32;
+}
+
+/* zone - orange colour */
+.logo-orange {
+    color: #ff9800;
+}
+
+/* Menu list */
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Each menu link */
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 4px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+}
+
+/* Mouse mela pona */
+.nav-link:hover {
+    color: #ff9800;
+    border-bottom: 3px solid #ffcc80;
+}
+
+/* Active page - keela line varum */
+.nav-link.active {
+    color: #2e7d32;
+    border-bottom: 3px solid #2e7d32;
+    font-weight: 600;
+}
